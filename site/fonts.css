@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'handel gothic';
+  src: url('fonts/handel_gothic_d_bold.woff') format('woff');
+  src: url('fonts/handel_gothic_d_bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: ;
+  src: url();
+  font-weight: normal;
+}
