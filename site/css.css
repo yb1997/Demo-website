@@ -66,6 +66,16 @@ body {
 /*@media all and (max-width: 300px) {
     .nav-bar a:link,a:active { display: none; }
 }*/
+@media screen and (max-width: 80em) {
+    #sidebar {
+      visibility: hidden;
+    }
+}
+@media screen and (max-width: 83em) {
+  #form {
+      visibility: hidden;
+  }
+}
   .nav-bar a:link,a:visited {
     display: inline-block;
     text-decoration: none;
