@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@media screen {
+html,body {
+  height: 100%
+}
+body {
+  margin: 0;
+  background-color: #0e2f44;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+*,*:before,*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+#header {
+  background-color: #0e2f44;
+  color: white;
+  text-align: center;
+  height: 40px;
+}
+#nav-bar {
+    width: 100%;
+    background: #1e60ac;
+    text-align: center;
+}
+#nav-bar li {
+  display: inline-block;
+}
+#nav-bar a:link,a:visited {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+#nav-bar a:hover {
+  background-color: rgba(0,0,0,0.2)/*#134c8d*/;
+  transition: background-color 0.3s;
+}
+#nav-bar a:focus {
+  background-color: #103967;
+}
+#nav-bar #google {
+  //background-color: #ce2f2f;
+}
+#main {
+  dislay: inline-block;
+  padding: 10px;
+  color: black;
+  background-color: white/*#0e2f44*/;
+  max-width: 435px;
+  height: 81.6%;
+  margin: 0 auto;
+  overflow: auto;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: red;
+  height: 50px;
+}
+}
+@media only screen and (max-device-width: 720px) {
+  #nav-bar li {
+    display: block;
+  }
+  #nav-bar a:link,a:active {
+    display: block;
+  }
+  a:hover .lists {
+    background-color: #134c8d;
+    transition: background-color 0.3s;
+  }
+  #main{
+    width: 100%;
+    font-size: 140%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div id="header"><h1>Header</h1></div>
+<div id="nav-bar">
+  <ul>
+    <li class="lists"><a href="#" id="google">Google</a></li><li class="lists"><a href="#" id="facebook">Facebook</a></li><li class="lists"><a href="#" id="youtube">YouTube</a></li>
+  </ul>
+</div>
+<div id="main">
+<p>The background-position property is <em>animatable</em> in CSS.</p>
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+</div>
+  <div id="footer">&copy;2016</div>
+</body>
+</html>
+
+
+
