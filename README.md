@@ -1,2 +1,2 @@
-# cooking-website
- creation of website using html and css
+# demo-website
+ creation of website using html,css and javascript for learning purposes
