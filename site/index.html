@@ -1,28 +1,41 @@
+<!-- TODO: how to set limit on how much user can decrease browser window width -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
       <title>Hello world !</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
       <script type="text/javascript" src="csi.js"></script>
-      <script type="text/javascript" src="javascript.js"></script>
+      <script type="text/javascript" src="index.js"></script>
       <link type="text/css" rel="stylesheet" href="fonts.css"/>
-      <link type="text/css" rel="stylesheet" href="css.css"/>
-      <link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/navBar.css">
+      <link rel="stylesheet" type="text/css" href="css/footer.css">
+      <link type="text/css" rel="stylesheet" href="css/index/index.css"/>
+      <link rel="stylesheet" type="text/css" media="only screen and (max-width: 720px),only screen and (max-device-width:720px)" href="css/index/smartphone720p.css">
+      <link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+
       <!-- <script src="https://use.fontawesome.com/de6b2f85fd.js"></script> -->
-      <meta charset="UTF-8">
       <link rel="icon" href="favicon.jpg" type="image/jpg" />
     </head>
-    <body>
 
-      <div class="header">
+    <body onscroll="chVisibility(this)">
+
+      <nav id="stickyNavBar" class="stickyNavBar">
+        <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="location.assign('index.html');"></i>
+        <a href="#" class="nav-link">html</a><a href="#" class="nav-link">css</a><a href="#" class="nav-link">javascript</a><a href="#" class="nav-link">angularjs 2</a>
+        <i class="fa fa-search fa-2x nav-link" aria-hidden="true"></i>
+      </nav>
+
+      <div id="header">
         <img alt="Krishna" src="images/header-logo2.png" title="supreme personality of godhead"/>
         <a class="header-logo" href="index.html"><span id="w3schools">W3SCHOOLS</span><span id="com">.COM</span></a>
       </div>
 
-      <nav class="nav-bar">
-        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-        <a href="#">html</a><a href="#">css</a><a href="#">javascript</a><a href="#">angularjs 2</a>
-        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      <nav id="nav-bar">
+        <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="location.href='index.html'"></i>
+        <a href="#" class="nav-link">html</a><a href="#" class="nav-link">css</a><a href="#" class="nav-link">javascript</a><a href="#" class="nav-link">angularjs 2</a>
+        <i class="fa fa-search fa-2x nav-link" aria-hidden="true"></i>
       </nav>
 
       <aside id="form">
@@ -39,7 +52,7 @@
         <div id="sidebar-listcontainer">
             <ul id="sidebar-unorderedlist">
               <li class="sidebar-listitem"><a href="https://www.google.com" id="sidebar-link1">FAQ</a></li>
-              <li class="sidebar-listitem"><a href="https://www.gmail.com" id="sidebar-link2" >About Us</a></li>
+              <li class="sidebar-listitem"><a href="contactUs.html" id="sidebar-link2">Contact Us</a></li>
             </ul>
         </div>
       </aside>
@@ -61,6 +74,8 @@
         <p>If you know the height of the footer, then you should set it explicitly, and set the bottom padding of the footer's parent element to be the same value (or larger if you want some spacing).</p>
         <p>This is to prevent the footer from overlapping the content above it, since it is being removed from the document flow with <code>position: absolute;</code>.</p>
       </main>
+
+      <a href="#top" id="toTop" class="toTop"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
       <div class="footer">
         <p> &copy; Yogi 2016</p>
       </div>

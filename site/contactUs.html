@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<script type="text/javascript" src="js/contactUs.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/contactUs/contactUs.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/navBar.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="icon" href="favicon.jpg" type="image/jpg" />
+	<link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 720px),only screen and (max-device-width:720px)" href="css/index/smartphone720p.css">
+	<link type="text/css" rel="stylesheet" href="fonts.css"/>
+</head>
+
+<body>
+
+	<div id="header">
+		<img alt="Krishna" src="images/header-logo2.png" title="supreme personality of godhead"/>
+		<a class="header-logo" href="index.html"><span id="w3schools">W3SCHOOLS</span><span id="com">.COM</span></a>
+  </div>
+
+  <nav id="nav-bar">
+    <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="location.assign('index.html');"></i>
+    <a href="#" class="nav-link">html</a><a href="#" class="nav-link">css</a><a href="#" class="nav-link">javascript</a><a href="#" class="nav-link">angularjs 2</a>
+    <i class="fa fa-search fa-2x nav-link" aria-hidden="true"></i>
+  </nav>
+
+  <div id="main">
+  	<form>
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>Name : <input type="textfield" name="Name"></label>
+				<br><br>
+
+				<label>Age : <input type="textfield" name="Age"></label>
+				<br><br>
+
+				<label>Temporary Address : <input type="text" name="TemporaryAddress" id="tempAdd"></label>
+				<br><br>
+
+				<label>Permanent Address : <input type="text" name="PermanentAddress" id="permAdd"></label><br><br>
+
+				<label><input type="checkbox" name="SameAsTemp" onclick="paste(this)">same as temporary address</label>
+				<br><br>
+
+				<input type="submit" name="submit">
+			</fieldset>
+		</form>
+  </div>
+
+  <a href="#top" id="toTop">Go to top</a>
+	
+	<div class="footer">
+    <p> &copy; Yogi 2016</p>
+  </div>
+
+</body>
+
+</html>

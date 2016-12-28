@@ -1,0 +1,66 @@
+#nav-bar {
+  position: relative;
+  background-color: #1e60ac/*#0E2245*//*#efefef*/;
+  height: 50px;
+  max-width: 100vw;
+  /*width: auto;*/
+}
+  #nav-bar a:link,a:visited,#stickyNavBar  a:link,a:visited{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    /*vertical-align: middle;*/
+    /*height : 100%;*/
+    /*background-color: #efefef;*/
+    color: #ffffff/*#0E2245*/;
+    /*text-align: center;*/
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    clear: both;
+  }
+  #nav-bar a:focus,#stickyNavBar a:focus{
+    color: #4CAF50;
+  }
+  #nav-bar a:active,#stickyNavBar a:active{
+    color: #4CAF50;
+    transition: none;
+  }
+  #nav-bar .fa-home,#stickyNavBar .fa-home{
+    float: left;
+    padding: 9px 10px;
+    /*height: 100%;*/
+    color: white;
+    cursor: pointer;
+  }
+  #nav-bar .fa-search,#stickyNavBar .fa-search{
+    float: right;
+    padding: 10px 10px;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-link:hover {
+    background-color: rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  }
+.stickyNavBar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e60ac/*#0E2245*//*#efefef*/;
+  height: 50px;
+  /*visibility: visible;*/
+}
+.showStickyNavBar {
+  display: block;
+  animation: animNavBar 0.6s 1;
+}
+@keyframes animNavBar {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

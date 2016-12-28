@@ -1,0 +1,16 @@
+
+.nav-bar .fa-home {
+	float: none;
+	display: block;
+	padding-left: 25px;
+}
+.nav-bar .fa-search {
+	float: none;
+	display: block;
+	padding-left: 25px;
+}
+.nav-bar a:link,a:visited,a:active {
+	display: block;
+	clear: all;
+	/*text-align: center;*/
+}

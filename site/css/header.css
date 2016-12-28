@@ -1,0 +1,41 @@
+#header {
+    /*padding-left: 100px;
+    padding-right: 100px;*/
+    /*height: 70px;*/
+    position: relative;
+    top: 0;
+    right: 0;
+    left:0;
+    background-color: #efefff;
+    overflow: hidden;
+}
+  .header-logo {
+    display: inline-block;
+    position: absolute;
+    font-size: 2em;
+    font-family: "handel gothic", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    bottom: 0.60em;
+    margin-left: 0;
+    margin-right: 0;
+    text-shadow: 2px 2px 10px;
+    letter-spacing: 2px;
+  }
+  .header-logo:hover {
+    background-color: unset;
+  }
+  .header-logo #w3schools {
+    color: #0E2245;
+  }
+  .header-logo #com {
+    color: #45CC5E;
+  }
+  .header-logo:hover #w3schools {
+    color: #45CC5E;
+  }
+  #header img {
+    float: left;
+    height: 100px/*100%*/;
+    width: 150px;
+  }
