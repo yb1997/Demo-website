@@ -5,7 +5,27 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'Open Sans Light';
+  src: url('fonts/Open_Sans_300.ttf') format('truetype');
   font-weight: normal;
+}
+@font-face {
+	font-family: 'Raleway Light';
+	src: url('fonts/Raleway_300.ttf') format('truetype');
+	font-weight: normal;
+}
+/********************Josefin Slab*****************/
+@font-face {
+	font-family: 'Josefin Slab Regular';
+	src: url('fonts/Josefin_Slab/Josefin Slab regular.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Josefin Slab Light';
+	src: url('fonts/Josefin_Slab/Josefin Slab 300.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Josefin Slab SemiBold';
+	src: url('fonts/Josefin_Slab/Josefin Slab 700.ttf') format('truetype');
 }
