@@ -26,7 +26,7 @@ function paste(el) {
 	var tempAdd = $("input[name='TemporaryAddress']").val();
 	var permAdd = $("input[name='PermanentAddress']").val();
 	var text = document.getElementById("tempAdd").value;
-	if (el.prop("checked")) {
+	if (el.checked) {
 		if (text != "") { //  if (text != "" || text != undefined)
 			// document.getElementById("permAdd").value = text;
 			$("#permAdd").val(text);
