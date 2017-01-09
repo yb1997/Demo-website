@@ -20,7 +20,7 @@ body {
   min-height: 100%;
   font-family: 'Open Sans Light',"Helvetica Neue", Arial, sans-serif;
   background-color: /*#0E2245*/#efefff;
-  background-image: url("../../images/background-wallpaper.jpg");
+  background-image: url("../../images/background-wallpaper2.jpg");
 }
 @media screen and (max-width: 80em) {
     #sidebar {
@@ -35,7 +35,7 @@ body {
       visibility: hidden;
   }
 }
-.main {
+main {
   background-color: #252e42;
   margin: 0 auto;
   /*display: inline-block;
@@ -47,38 +47,48 @@ body {
   width: 94%;
   /*border: 1px solid #40486f;*/
 }
-  .main #heading-main {
+  main #heading-main {
     color: #779cca;
   }
-  .main p {
+  main p {
     color: #eaeff4;
     text-align: left;
   }
 .container {
   padding: 0 15px;
 }
-#box {
+#html {
   color: white;
   background-image: url('../../images/windows_10.jpg');
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  min-height: 300px;
+}
+#html ul {
+  list-style: none;
+}
+#html li {
+  display: inline-block;
+}
+#html img {
+  background-color: white;
+  margin: 0 10px;
 }
 #js {
   color: white;
   background-color: green;
-  height: 300px;
+  min-height: 300px;
 }
 #ng {
   color: white;
   background-color: red;
-  height: 300px;
+  min-height: 300px;
 }
 #css {
   color: white;
   background-color: blue;
-  height: 300px;
+  min-height: 300px;
 }
 #form {
   float: left;

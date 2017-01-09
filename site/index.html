@@ -14,7 +14,7 @@
       <link type="text/css" rel="stylesheet" href="css/index/index.css"/>
       <link rel="stylesheet" type="text/css" media="only screen and (max-width: 720px),only screen and (max-device-width:720px)" href="css/index/smartphone720p.css">
       <link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <!-- <script src="https://use.fontawesome.com/de6b2f85fd.js"></script> -->
       <link rel="icon" href="favicon.jpg" type="image/jpg" />
     </head>
@@ -22,13 +22,15 @@
     <body onscroll="chVisibility(this)">
 
       <nav id="stickyNavBar" class="stickyNavBar">
-        <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="location.assign('index.html');"></i>
-        <a href="#" class="nav-link">html</a><a href="#" class="nav-link">css</a><a href="#" class="nav-link">javascript</a><a href="#" class="nav-link">angularjs 2</a>
+        <i class="fa fa-home fa-2x nav-link" aria-hidden="true"></i>
+
+        <a href="nav_links/html_tutorial.html" class="nav-link">html</a><a href="nav_links/css_tutorial.html" class="nav-link">css</a><a href="nav_links/javascript_tutorial.html" class="nav-link">javascript</a><a href="nav_links/angular_tutorial.html" class="nav-link">angularjs 2</a>
+
         <i class="fa fa-search fa-2x nav-link" aria-hidden="true"></i>
       </nav>
 
       <div id="header">
-        <img alt="Krishna" src="images/header-logo2.png" title="supreme personality of godhead"/>
+        <img alt="Krishna" title="supreme personality of godhead"/>
         <a class="header-logo" href="index.html"><span id="w3schools">W3SCHOOLS</span><span id="com">.COM</span></a>
       </div>
 
@@ -42,8 +44,7 @@
 
       <aside id="form">
         <form method="GET" action="https://www.google.com">
-          <p style="display:inline;">Name : </p>
-          <input type="text" width="70px" height="20px"/>
+          <label>Name : <input type="text" width="70px" height="20px"/></label>
         </form>
       </aside>
 
@@ -77,8 +78,16 @@
           <p>If you know the height of the footer, then you should set it explicitly, and set the bottom padding of the footer's parent element to be the same value (or larger if you want some spacing).</p>
           <p>This is to prevent the footer from overlapping the content above it, since it is being removed from the document flow with <code>position: absolute;</code>.</p>
         </div>
-        <div id="box">
-          <h1>Hello world !</h1>
+        <div id="html" class="container">
+          <h1>HTML</h1>
+          <ul>
+            <li><img src="images/html_logo1.jpg" alt="html_logo1" height="200" width="200"></li>
+            <li><img src="images/html_logo.jpg" alt="html_logo" height="200" width="200"></li>
+            <li><img src="images/w3schoolsLogo.png" alt="w3schoolsLogo" height="200" width="200"></li>
+          </ul>
+        </div>
+        <div id="js" class="container">
+          <h1>Javascript !</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -86,8 +95,8 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div id="js">
-          <h1>Hello world !</h1>
+        <div id="ng" class="container">
+          <h1>Angular !</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -95,17 +104,8 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div id="ng">
-          <h1>Hello world !</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div id="css">
-          <h1>Hello world !</h1>
+        <div id="css" class="container">
+          <h1>CSS !</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -116,9 +116,9 @@
       </main>
 
       <a href="#top" id="toTop" class="toTop"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
-      <div class="footer">
+      <footer>
         <p> &copy; Yogi 2016</p>
-      </div>
+      </footer>
 
     </body>
 </html>
