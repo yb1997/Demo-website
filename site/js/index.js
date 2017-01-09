@@ -1,27 +1,31 @@
 //window.onscroll = function() {chVisibility()};
 function chVisibility(el) {
 	//console.log(document.body.scrollTop);
-	if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-		var navBar = document.getElementById("stickyNavBar");
-		navBar.classList.add("showStickyNavBar");
+	if ($(document).scrollTop() > 150 || document.documentElement.scrollTop > 150) {
+		// var navBar = document.getElementById("stickyNavBar");
+		// navBar.classList.add("showStickyNavBar");
+		$("#stickyNavBar").fadeIn(300);
+		$("#toTop").fadeIn(200);
 		// navBar.style.transition = "visibility 1s";
 		// navBar.style.display = "block";
 	}
 	else {
 		document.getElementById("stickyNavBar").classList.remove("showStickyNavBar");
+		$("#stickyNavBar").fadeOut(400);
+		$("#toTop").fadeOut(200);
 	}
 
-	/*################### Move To Top Button ################*/
-    var ael = document.getElementById("toTop");
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    	// ael.style.visibility = "visible";
-    	// animToTop(ael);
-    	ael.classList.add("animtoTop");
-    }
-    else {
-    	// ael.style.visibility = "hidden";
-    	ael.classList.remove("animtoTop");
-    }
+	// /*################### Move To Top Button ################*/
+ //    var ael = document.getElementById("toTop");
+ //    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+ //    	// ael.style.visibility = "visible";
+ //    	// animToTop(ael);
+ //    	ael.classList.add("animtoTop");
+ //    }
+ //    else {
+ //    	// ael.style.visibility = "hidden";
+ //    	ael.classList.remove("animtoTop");
+ //    }
 
 }
 // function animToTop(el) {

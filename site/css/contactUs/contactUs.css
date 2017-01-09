@@ -23,23 +23,16 @@ a:hover {
   transition: background-color 0.3s;
 }
 #main {
-  background-color: #252e42;
-  margin: 0 auto;
-  /*display: inline-block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);*/
-  /*justify-content: center;*/
   padding: 40px 15px;
-  max-width: /*960px*/780px;
-  width: 94%;
-  /*border: 1px solid #40486f;*/
-  color: white;
 }
-#toTop {
-  display: none;
-  position: fixed;
-  right: 100px;
-  bottom: 130px;
+/*input[type=submit] {
+  border: none;
+  background-color: #1e60ac;
   color: white;
+  padding: 10px;
 }
+input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #124d92;
+  transition: background-color 0.3s;
+}*/

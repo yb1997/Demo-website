@@ -25,6 +25,7 @@ body {
 main {
   background-color: #252e42;
   margin: auto;
+  color: white;
   /*display: inline-block;
   position: absolute;
   left: 50%;
@@ -41,9 +42,9 @@ main {
 .container {
   padding: 0 15px;
 }
-.toTop {
+#toTop {
+  display: none;
   color: white;
-  visibility: hidden;
   position: fixed;
   right: 100px;
   bottom: 100px;

@@ -2,38 +2,42 @@
 <html>
 <head>
 	<title>form</title>
+	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/contactUs.js"></script>
+	<link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/contactUs/contactUs.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/navBar.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="icon" href="favicon.jpg" type="image/jpg" />
-	<link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 720px),only screen and (max-device-width:720px)" href="css/index/smartphone720p.css">
-	<link type="text/css" rel="stylesheet" href="fonts.css"/>
+	<link type="text/css" rel="stylesheet" href="fonts.css">
+	<link rel="icon" href="favicon.jpg" type="image/jpg">
 </head>
 
 <body>
 
 	<div id="header">
-		<img alt="Krishna" src="images/header-logo2.png" title="supreme personality of godhead"/>
+		<img alt="Krishna" src="images/header-logo2.png" title="peacock"/>
 		<a class="header-logo" href="index.html"><span id="w3schools">W3SCHOOLS</span><span id="com">.COM</span></a>
   </div>
 
   <nav id="nav-bar">
     <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="location.assign('index.html');"></i>
-    <a href="#" class="nav-link">html</a><a href="#" class="nav-link">css</a><a href="#" class="nav-link">javascript</a><a href="#" class="nav-link">angularjs 2</a>
+    <a href="nav_links/html_tutorial.html" class="nav-link">html</a><a href="nav_links/css_tutorial.html" class="nav-link">css</a><a href="nav_links/javascript_tutorial.html" class="nav-link">javascript</a><a href="nav_links/angular_tutorial.html" class="nav-link">angularjs 2</a>
     <i class="fa fa-search fa-2x nav-link" aria-hidden="true"></i>
   </nav>
 
-  <div id="main">
+  <main id="main">
+  
   	<form>
 			<fieldset>
 				<legend>Personal Information</legend>
-				<label>Name : <input type="textfield" name="Name"></label>
+
+				<label>Name : <input type="text" name="Name" id="name"></label>
 				<br><br>
 
-				<label>Age : <input type="textfield" name="Age"></label>
+				<label>Age : <input type="textfield" name="Age" id="age"></label>
 				<br><br>
 
 				<label>Temporary Address : <input type="text" name="TemporaryAddress" id="tempAdd"></label>
@@ -41,19 +45,20 @@
 
 				<label>Permanent Address : <input type="text" name="PermanentAddress" id="permAdd"></label><br><br>
 
-				<label><input type="checkbox" name="SameAsTemp" onclick="paste(this)">same as temporary address</label>
+				<label><input type="checkbox" name="SameAsTemp" onchange="paste(this)">same as temporary address</label>
 				<br><br>
 
-				<input type="submit" name="submit">
+				<input type="submit" name="submit" disabled="disabled" id="submit">
 			</fieldset>
 		</form>
-  </div>
 
-  <a href="#top" id="toTop">Go to top</a>
+  </main>
+
+  <a href="#top" id="toTop" class="toTop">Go to top</a>
 	
-	<div class="footer">
-    <p> &copy; Yogi 2016</p>
-  </div>
+	<footer>
+    <p>&copy; Yogi 2016</p>
+  </footer>
 
 </body>
 
