@@ -5,25 +5,24 @@
       <title>Hello world !</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="utf-8">
-      <script type="text/javascript" src="csi.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
-      <link type="text/css" rel="stylesheet" href="fonts.css"/>
+      <link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="fonts.css">
       <link rel="stylesheet" type="text/css" href="css/header.css">
       <link rel="stylesheet" type="text/css" href="css/navBar.css">
       <link rel="stylesheet" type="text/css" href="css/footer.css">
-      <link type="text/css" rel="stylesheet" href="css/index/index.css"/>
+      <link type="text/css" rel="stylesheet" href="css/index/index.css">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <link rel="stylesheet" type="text/css" media="only screen and (max-width: 720px),only screen and (max-device-width:720px)" href="css/index/smartphone720p.css">
-      <link type="text/css" rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <!-- <script src="https://use.fontawesome.com/de6b2f85fd.js"></script> -->
-      <link rel="icon" href="favicon.jpg" type="image/jpg" />
+      <link rel="icon" href="favicon.jpg" type="image/jpg">
     </head>
 
-    <body onscroll="chVisibility(this)">
+    <body>
 
       <nav id="stickyNavBar" class="stickyNavBar">
-        <i class="fa fa-home fa-2x nav-link" aria-hidden="true"></i>
+        <i class="fa fa-home fa-2x nav-link" aria-hidden="true" onclick="javascript:location.assign('./index.html')"></i>
 
         <a href="nav_links/html_tutorial.html" class="nav-link">html</a><a href="nav_links/css_tutorial.html" class="nav-link">css</a><a href="nav_links/javascript_tutorial.html" class="nav-link">javascript</a><a href="nav_links/angular_tutorial.html" class="nav-link">angularjs 2</a>
 
@@ -116,11 +115,10 @@
         </div>
       </main>
 
-      <a href="#top" id="toTop"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
+      <a id="scrollToTop" href="#"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
 
       <footer>
         <p> &copy; Yogi 2016</p>
       </footer>
-
     </body>
 </html>

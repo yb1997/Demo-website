@@ -42,21 +42,21 @@ main {
 .container {
   padding: 0 15px;
 }
-#toTop {
+#scrollToTop {
   display: none;
   color: white;
   position: fixed;
   right: 100px;
-  bottom: 100px;
-  opacity: 1;
+  bottom: 80px;
 }
-
-.animtoTop {
+/******************************************************************************/
+/*not needed for now as the same functionality is achieved through javascript*/
+/*.animtoTop {
   visibility: visible;
   animation: showTop 0.6s 1;
 }
 @keyframes showTop {
   0% {opacity: 0;}
   100% {opacity: 1;}
-}
-
+}*/
+/******************************************************************************/

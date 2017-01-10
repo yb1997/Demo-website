@@ -12,6 +12,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+div > h1 {
+  margin-top: 0;
+}
 body {
   position: relative;
   margin: 0;
